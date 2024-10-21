@@ -28,7 +28,7 @@ jobs:
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-modules-
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         env:
           FORCE_COLOR: 0
         with:
